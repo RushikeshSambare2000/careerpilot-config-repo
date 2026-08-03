@@ -5,7 +5,7 @@ spring:
   datasource:
     url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:careerpilot_ai}?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     username: ${DB_USERNAME:root}
-    password: ${DB_PASSWORD:root}
+    password: ${DB_PASSWORD:cdac}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
@@ -46,7 +46,7 @@ spring:
 #   https://ai.google.dev/gemini-api/docs/models before changing this, and
 #   override with GEMINI_MODEL rather than editing the file.
 gemini:
-  api-key: ${GEMINI_API_KEY:}
+  api-key: ${GEMINI_API_KEY:AQ.Ab8RN6IsbfXOd6haHgab3PN1vQZ5HXDVi0QykTbnUnQXifoyBw}
   model: ${GEMINI_MODEL:gemini-3.5-flash}
   base-url: ${GEMINI_BASE_URL:https://generativelanguage.googleapis.com/v1beta}
   temperature: ${GEMINI_TEMPERATURE:0.4}
