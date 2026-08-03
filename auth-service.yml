@@ -5,7 +5,7 @@ spring:
   datasource:
     url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:careerpilot_auth}?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     username: ${DB_USERNAME:root}
-    password: ${DB_PASSWORD:root}
+    password: ${DB_PASSWORD:cdac}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     # No Flyway/Liquibase in scope for this migration, so Hibernate manages the
@@ -30,11 +30,12 @@ spring:
 # dashboard via environment variables. Never commit real keys here; this file
 # lives in a git repo the config server reads from.
 razorpay:
-  key-id: ${RAZORPAY_KEY_ID:rzp_test_placeholder}
-  key-secret: ${RAZORPAY_KEY_SECRET:placeholder_secret}
+  key-id: rzp_test_TLDXzlvMYzOhDv
+  key-secret: ScCLwPalEQKStZ11Zz4gkbDu
   webhook-secret: ${RAZORPAY_WEBHOOK_SECRET:}
   premium-amount-paise: ${RAZORPAY_PREMIUM_AMOUNT_PAISE:49900}
   premium-duration-days: ${RAZORPAY_PREMIUM_DURATION_DAYS:30}
+
 
 # ---------------------------------------------------------------------------
 # ADMIN MODULE
