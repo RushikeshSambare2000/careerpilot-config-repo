@@ -46,7 +46,7 @@ spring:
 #   https://ai.google.dev/gemini-api/docs/models before changing this, and
 #   override with GEMINI_MODEL rather than editing the file.
 gemini:
-  api-key: ${GEMINI_API_KEY:AQ.Ab8RN6L84nldDYsqEkmtj59hs6Ich3LYn8NJgfAldi_YmR24pA}
+  api-key: ${GEMINI_API_KEY:AQ.Ab8RN6KHVJQmnR3RDr0X-u6JH0iBIbnBpolYEiwG6z8A5Yri_w}
   model: ${GEMINI_MODEL:gemini-3.5-flash}
   base-url: ${GEMINI_BASE_URL:https://generativelanguage.googleapis.com/v1beta}
   temperature: ${GEMINI_TEMPERATURE:0.4}
